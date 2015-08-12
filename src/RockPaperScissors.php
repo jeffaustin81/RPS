@@ -12,14 +12,31 @@
               return "Draw";
           }
 
-          elseif ($input1 === "rock" && $input2 === "scissors" || $input1 === "paper" && $input2 === "rock" || $input1 === "scissors" && $input2 = "paper") {
+          if ($input1 === "rock") {
+              if($input2 === "scissors")
+              {
+                  return "Player 1";
+              }elseif($input2 === "paper")
+              {
+                  return "Player 2";
+              }
+        }
+            if($input1 === "scissors"){
+                if($input2 === "paper") {
+                    return "Player 1";
+                }elseif($input2 === "rock") {
+                    return "Player 2";
+                }
 
-              return "Player 1";
-          }
+            }
+            if($input1 === "paper") {
+                if($input2 === "rock") {
+                    return "Player 1";
+                }elseif($input2 === "scissors") {
+                    return "Player 2";
+                }
+            }
 
-          elseif ($input2 === "rock" && $input1 === "scissors" || $input2 === "paper" && $input1 === "rock" || $input2 === "scissors" && $input1 = "paper") {
-
-              return "Player 2";
-          }
+            return "INVALID ENTRY";
         }
     }
