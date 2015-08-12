@@ -14,22 +14,22 @@ Fourth spec, this spec is testing if player 1 is returned based on player 1 and 
 INPUT1: "rock" INPUT2: "scissors"
 OUTPUT: "Player 1"
 
-Fifth spec, this spec is testing if player 2 is returned based on player 1 and player 2's input
-INPUT1: "paper" INPUT2: "scissors"
-OUTPUT: "Player 2"
+Fifth spec, this spec is testing if player 1 is returned based on player 1 and player 2's input
+INPUT1: "paper" INPUT2: "rock"
+OUTPUT: "Player 1"
 
-Sixth spec, this spec is testing if player 2 is returned based on player 1 and player 2's input
-INPUT1: "rock" INPUT2: "paper"
-OUTPUT: "Player 2"
+Sixth spec, this spec is testing if player 1 is returned based on player 1 and player 2's input
+INPUT1: "scissors" INPUT2: "paper"
+OUTPUT: "Player 1"
 
 Seventh spec, this spec is testing if player 2 is returned based on player 1 and player 2's input
 INPUT1: "scissors" INPUT2: "rock"
 OUTPUT: "Player 2"
 
-Eighth spec, this spec is testing if player 1 is returned based on player 1 and player 2's input
-INPUT1: "scissors" INPUT2: "paper"
-OUTPUT: "Player 1"
+Eighth spec, this spec is testing if player 2 is returned based on player 1 and player 2's input
+INPUT1: "rock" INPUT2: "paper"
+OUTPUT: "Player 2"
 
-Ninth spec, this spec is testing if player 1 is returned based on player 1 and player 2's input
-INPUT1: "paper" INPUT2: "rock"
-OUTPUT: "Player 1"
+Ninth spec, this spec is testing if player 2 is returned based on player 1 and player 2's input
+INPUT1: "paper" INPUT2: "scissors"
+OUTPUT: "Player 2"

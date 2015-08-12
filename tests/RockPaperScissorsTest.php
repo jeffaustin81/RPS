@@ -50,5 +50,65 @@
 
               $this->assertEquals("Player 1", $result);
            }
+
+           function test_rockPaperScissorsGame_paper_rock1()
+           {
+
+               $test_RockPaperScissors = new RockPaperScissors;
+               $input1 = "paper";
+               $input2 = "rock";
+
+               $result = $test_RockPaperScissors->rockPaperScissorsGame ($input1, $input2);
+
+               $this->assertEquals("Player 1", $result);
+            }
+
+            function test_rockPaperScissorsGame_scissors_paper1()
+            {
+
+                $test_RockPaperScissors = new RockPaperScissors;
+                $input1 = "scissors";
+                $input2 = "paper";
+
+                $result = $test_RockPaperScissors->rockPaperScissorsGame ($input1, $input2);
+
+                $this->assertEquals("Player 1", $result);
+             }
+
+             function test_rockPaperScissorsGame_rock_scissors2()
+             {
+
+                 $test_RockPaperScissors = new RockPaperScissors;
+                 $input1 = "scissors";
+                 $input2 = "rock";
+
+                 $result = $test_RockPaperScissors->rockPaperScissorsGame ($input1, $input2);
+
+                 $this->assertEquals("Player 2", $result);
+              }
+
+              // function test_rockPaperScissorsGame_paper_rock2()
+              // {
+              //
+              //     $test_RockPaperScissors = new RockPaperScissors;
+              //     $input1 = "paper";
+              //     $input2 = "rock";
+              //
+              //     $result = $test_RockPaperScissors->rockPaperScissorsGame ($input1, $input2);
+              //
+              //     $this->assertEquals("Player 2", $result);
+              //  }
+              //
+              //  function test_rockPaperScissorsGame_scissors_paper2()
+              //  {
+              //
+              //      $test_RockPaperScissors = new RockPaperScissors;
+              //      $input1 = "scissors";
+              //      $input2 = "paper";
+              //
+              //      $result = $test_RockPaperScissors->rockPaperScissorsGame ($input1, $input2);
+              //
+              //      $this->assertEquals("Player 2", $result);
+              //   }
     }
 ?>

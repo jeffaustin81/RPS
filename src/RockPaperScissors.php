@@ -10,8 +10,16 @@
           if ($input1 === $input2)
           {
               return "Draw";
-          }else if ($input1 === "rock" && $input2 === "scissors") {
+          }
+
+          elseif ($input1 === "rock" && $input2 === "scissors" || $input1 === "paper" && $input2 === "rock" || $input1 === "scissors" && $input2 = "paper") {
+
               return "Player 1";
+          }
+
+          elseif ($input2 === "rock" && $input1 === "scissors" || $input2 === "paper" && $input1 === "rock" || $input2 === "scissors" && $input1 = "paper") {
+
+              return "Player 2";
           }
         }
     }
