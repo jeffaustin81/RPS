@@ -38,9 +38,7 @@
 
     $app->post("/player2", function() use($app) {
         save($_POST);
-        // deleteAll();
-        // var_dump($_SESSION['player_results']);
-        // var_dump($_SESSION['player_results'][0]['player1']);
+      
         return $app['twig']->render('player2.html.twig', getAll($_SESSION['player_results']));
     });
     
@@ -48,8 +46,6 @@
         save($_POST);
         $results = new RockPaperScissors;
         $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player_results'][1]['player2']);
-        
-        var_dump($_SESSION['player_results']);
         
         return $app['twig']->render('results.html.twig', array('results'=>$results_array));
         
