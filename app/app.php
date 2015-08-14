@@ -32,6 +32,7 @@
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__."/../views"));
 
     $app->get("/", function() use($app) {
+        deleteAll();
         return $app['twig']->render('home.html.twig');
     });
 
@@ -44,10 +45,11 @@
     });
     
     $app->post("/results", function() use($app) {
+        save($_POST);
         $results = new RockPaperScissors;
-        $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player2'][0]['player2']);
+        $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player_results'][1]['player2']);
         
-        // var_dump($_SESSION['player_results']);
+        var_dump($_SESSION['player_results']);
         
         return $app['twig']->render('results.html.twig', array('results'=>$results_array));
         
