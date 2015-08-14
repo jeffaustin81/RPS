@@ -1,6 +1,6 @@
 # _Rock Paper Scissors Game_
 
-##### Allows two players to play rock, paper, scissors. (_August 12th 2015_)
+##### Allows two players to play rock, paper, scissors. **_August, 12th 2015_**
 
 #### By _**Tyler Deem & Jeff Austin**_
 
