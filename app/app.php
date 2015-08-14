@@ -45,7 +45,8 @@
     $app->post("/results", function() use($app) {
         save($_POST);
         $results = new RockPaperScissors;
-        $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player_results'][1]['player2']);
+        $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player_results'][1]
+            ['player2']);
         
         return $app['twig']->render('results.html.twig', array('results'=>$results_array));
         
