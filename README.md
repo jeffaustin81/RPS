@@ -6,7 +6,7 @@
 
 ## Description
 
-_Player one clicks on button options of rock, paper, or scissors then application goes to a player two view that then allows player two to click on his option_
+_Player one clicks on button options of rock, paper, or scissors then application goes to a player two view that then allows player two to click on his option it then displays which player won or if it was a draw_
 
 ## Setup
 
