@@ -7,7 +7,7 @@
         $_SESSION['player_results'] = array();
     }
 
-    function save()
+    function save($this)
     {
         array_push($_SESSION['player_results'], $this);
     }
@@ -36,9 +36,21 @@
     });
 
     $app->post("/player2", function() use($app) {
-        save($_POST['player1']);
-        var_dump($_SESSION['player_results']);
-        return $app['twig']->render('player2.html.twig');
+        save($_POST);
+        // deleteAll();
+        // var_dump($_SESSION['player_results']);
+        // var_dump($_SESSION['player_results'][0]['player1']);
+        return $app['twig']->render('player2.html.twig', getAll($_SESSION['player_results']));
+    });
+    
+    $app->post("/results", function() use($app) {
+        $results = new RockPaperScissors;
+        $results_array = $results->rockPaperScissorsGame($_SESSION['player_results'][0]['player1'], $_SESSION['player2'][0]['player2']);
+        
+        // var_dump($_SESSION['player_results']);
+        
+        return $app['twig']->render('results.html.twig', array('results'=>$results_array));
+        
     });
 
 
