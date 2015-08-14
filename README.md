@@ -12,7 +12,7 @@ _Player one clicks on button options of rock, paper, or scissors then applicatio
 
 ###### _You'll need composer installed on your computer_
 ###### _You'll need to clone this repo_
-###### _Run composer install from the root directory in your terminal_
+###### _Run composer install from the root directory of this cloned repo in your terminal_
     $ composer install
 ###### _Navigate to the web file and run php -S localhost:8000 in your terminal_
     $ php -S localhost:8000
