@@ -10,12 +10,12 @@ _Player one clicks on button options of rock, paper, or scissors then applicatio
 
 ## Setup
 
-* _You'll need to clone this repo_
-* _Run composer install from the root directory in your terminal_
+###### _You'll need to clone this repo_
+###### _Run composer install from the root directory in your terminal_
     $ composer install
-* _Navigate to the web file and run php -S localhost:8000 in your terminal_
+###### _Navigate to the web file and run php -S localhost:8000 in your terminal_
     $ php -S localhost:8000
-* _Open up http//:localhost:8000 in your browser and have fun_
+###### _Open up http//:localhost:8000 in your browser and have fun_
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ _Technologies include PHP, Silex, Twig, and Bootstrap (bootstrap's CDN is includ
 
 *{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
 
-Copyright (c) 2015 **_{List of contribtors}_**
+Copyright (c) 2015 **_Tyler Deem & Jeff Austin_**
 
 This software is licensed under the MIT license.
 
