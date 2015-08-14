@@ -10,6 +10,7 @@ _Player one clicks on button options of rock, paper, or scissors then applicatio
 
 ## Setup
 
+###### _You'll need composer installed on your computer
 ###### _You'll need to clone this repo_
 ###### _Run composer install from the root directory in your terminal_
     $ composer install
